@@ -11,8 +11,8 @@ var Home = React.createClass({
     render: function(){
         return (
             <div className='jumbotron col-sm-12 text-center' style={transparentBg}>
-                <h1>GitHub Battle</h1>
-                <p className='lead'>React is the best library for JS.</p>
+                <h1>Perfect Summer</h1>
+                <p className='lead'>Find your perfect destination for this summer.</p>
                 <Link to='/playerOne'>
                     <button type="button" className='btn btn-lg btn-success'>Get Started</button>
                 </Link>

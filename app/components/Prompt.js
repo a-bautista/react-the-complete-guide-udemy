@@ -17,7 +17,7 @@ function Prompt (props){
                 <form onSubmit={props.onSubmitUser}>
                     <div className="form-group">
                         <input className="form-control"
-                               placeholder="Github user"
+                               placeholder="Please, introduce your desired temperature level"
                                onChange={props.onUpdateUser}
                                value={props.username}
                                type="text" />

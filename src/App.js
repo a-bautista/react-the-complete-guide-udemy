@@ -35,13 +35,23 @@ class App extends Component {
     }
 
   render() {
+    const style = {
+      backgroundColor: 'white',
+      font: 'inherit',
+      border: '1px solid blue',
+      padding: '8px',
+      cursor: 'pointer'
+    };
+
+
     return (
       /* This is JSX code, this is not html. We use className to avoid confusion with the keyword class even though
        the className gets converted to the class keyword. */
       <div className="App">
         <h1>React App</h1>
         <p>This is working!</p>
-        <button onClick={() => this.switchNameHandler('Alejandro B.')}>Switch name</button>
+        <button  style={style}
+        onClick={() => this.switchNameHandler('Alejandro B.')}>Switch name</button>
         
         <Person 
             name={this.state.people[0].name} 

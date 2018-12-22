@@ -26,6 +26,14 @@ class App extends Component {
                 ]})
     }
 
+  nameChangeHandler = (event) => {
+    this.setState({
+      people: [{name: 'Alejandro!', age: 22},
+              {name: event.target.value, age: 24},
+              {name: 'Stephanie', age: 32}
+            ]})
+    }
+
   render() {
     return (
       /* This is JSX code, this is not html. We use className to avoid confusion with the keyword class even though
@@ -33,7 +41,7 @@ class App extends Component {
       <div className="App">
         <h1>React App</h1>
         <p>This is working!</p>
-        <button onClick={() => this.switchNameHandler('Alejandro')}>Switch name</button>
+        <button onClick={() => this.switchNameHandler('Alejandro B.')}>Switch name</button>
         
         <Person 
             name={this.state.people[0].name} 
@@ -43,7 +51,8 @@ class App extends Component {
             name={this.state.people[1].name} 
             age={this.state.people[1].age}
             //The syntax from below is more efficient than the one from above.
-            click={this.switchNameHandler.bind(this, 'Alejandro!')}>Hobbies: Racing
+            click = {this.switchNameHandler.bind(this, 'Alejandro')}
+            changed = {this.nameChangeHandler}>Hobbies: Racing
         </Person>
         <Person 
             name={this.state.people[2].name} 

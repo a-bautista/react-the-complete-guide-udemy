@@ -37,27 +37,23 @@ A <b>state</b> is a property only available to the class components and what it 
         {name: 'Liz', age: 29},
 
         {name: 'Stephanie', age: 30}
-        
+
         ]
     }
 
-// event handler
-`switchNameHandler = (newName) => {`
-    `this.setState({`
-          `people: [{name: newName, age: 22},`
-                  `{name: 'Liz', age: 24},`
-                  `{name: 'Stephanie', age: 32}`
-                `]})`
-    `}`
+    // event handler
+    switchNameHandler = (newName) => {
+    
+    this.setState({
+          
+          people: [{name: newName, age: 22},
+                  
+                  {name: 'Liz', age: 24},
 
-// event handler
-`nameChangeHandler = (event) => {`
-    `this.setState({`
-      `people: [{name: 'Alejandro!!!', age: 22},`
-              `{name: event.target.value, age: 24},`
-              `{name: 'Stephanie', age: 32}`
-            `]})`
-    `}`
+                  {name: 'Stephanie', age: 32}
+                
+                ]})
+    }
 
 When the user clicks on the button the switchNameHandler event listener goes into its definition and sets the new state for the class component. 
 

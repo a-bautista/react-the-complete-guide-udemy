@@ -28,13 +28,18 @@ App.js contains a state for the 3 `<Person>` tags and 2 event handlers that list
 
 A <b>state</b> is a property only available to the class components and what it does is to hold a state that changes inside of the class as in contrast with <b>props</b> which changes from outside - more information will be covered later on; furthermore, you can manipulate the state property with the `<b>this</b>` keyword. It is not recommended to use it too heavily because applications might become unpredictable. 
 
-// states being hold
-`state = {`
-    `people: [{name: 'Alex', age: 28},`
-        `{name: 'Liz', age: 29},`
-        `{name: 'Stephanie', age: 30}`
-        `]`
-    `}`
+    // states being hold
+
+    state = {
+
+        people: [{name: 'Alex', age: 28},
+
+        {name: 'Liz', age: 29},
+
+        {name: 'Stephanie', age: 30}
+        
+        ]
+    }
 
 // event handler
 `switchNameHandler = (newName) => {`

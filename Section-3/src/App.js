@@ -3,12 +3,6 @@ import './App.css';
 import Person from './Person/Person';
 
 class App extends Component {
-
-  /* state is only available in the class components. 
-     state is a property and it is not recommended to use it too heavily because then your application might
-     become unpredictable. You can only get access to the state by using the this keyword. 
-     state changes from inside whereas props receives changes from outside.  */
-
   state = {
       people: [{name: 'Alex', age: 28},
                {name: 'Liz', age: 29},
@@ -18,7 +12,7 @@ class App extends Component {
 
   switchNameHandler = (newName) => {
     //console.log("This was clicked!");
-    // avoid using this syntax for changing state -> this.state.people[0].name = 'Alejandro'
+    // avoid using the following syntax for changing a state -> this.state.people[0].name = 'Alejandro'
     this.setState({
           people: [{name: newName, age: 22},
                   {name: 'Liz', age: 24},
@@ -28,7 +22,7 @@ class App extends Component {
 
   nameChangeHandler = (event) => {
     this.setState({
-      people: [{name: 'Alejandro!', age: 22},
+      people: [{name: 'Alejandro!!!', age: 22},
               {name: event.target.value, age: 24},
               {name: 'Stephanie', age: 32}
             ]})
@@ -45,8 +39,9 @@ class App extends Component {
 
 
     return (
-      /* This is JSX code, this is not html. We use className to avoid confusion with the keyword class even though
-       the className gets converted to the class keyword. */
+      //We use className to avoid confusion with the keyword class even though the className 
+      // gets converted to the class keyword.
+
       <div className="App">
         <h1>React App</h1>
         <p>This is working!</p>

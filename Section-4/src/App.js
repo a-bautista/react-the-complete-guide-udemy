@@ -8,11 +8,11 @@ class App extends Component {
                {id: 'b123', name: 'Liz', age: 29},
                {id: 'c123', name: 'Stephanie', age: 30}
               ],
-              otherState: 'other value',
               // showPersons is used to display the cards of the other people with the if conditional
               showPersons: false
           }
 
+  // change the name of the person in each paragraph once you type in the input field
   nameChangeHandler = (event, id) => {
     // get the value of the person you want to change by its id
     const personIndex = this.state.people.findIndex(p => {
@@ -51,6 +51,7 @@ class App extends Component {
 
   // this method belongs to the class App and it displays the cards of each person
   togglePersonsHandler = () => {
+    // copy the variable with the original value, do not change the values through the original variable
       const doesShow = this.state.showPersons;
       this.setState({showPersons: !doesShow});
   }
@@ -95,9 +96,7 @@ class App extends Component {
         <button  style={style}
           onClick={this.togglePersonsHandler}>Switch name</button>  
         {persons}
-      </div> 
-      // html element, css, element to render
-      //React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Hello Alex!'))
+      </div>       
     );
   }
 }

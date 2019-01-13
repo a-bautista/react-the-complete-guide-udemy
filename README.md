@@ -42,6 +42,7 @@ A <b>state</b> is a property only available to the class components and what it 
     }
 
     // event handler
+    
     switchNameHandler = (newName) => {
     
     this.setState({

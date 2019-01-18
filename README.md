@@ -152,4 +152,11 @@ Lastly, when you type in the input element of each person's card you activate th
         this.setState({people: copyPeople});
     }
 
+This is how the structure of the react app works:
+
+     
+    App.js ---> waits for an event ---> click on button ---> togglePersonsHandler ---> display <Person /> 
+    
+
 ### 2.1 section-4-Assignment
+

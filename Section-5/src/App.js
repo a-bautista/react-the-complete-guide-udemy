@@ -71,7 +71,8 @@ class App extends Component {
       }
     };
 
-    let persons = null;
+    let persons  = null;
+    
 
     //if showPersons === true then display the contents of the card
     if(this.state.showPersons){
@@ -90,16 +91,19 @@ class App extends Component {
             })}
           </div>
         );
-        // when the button is activated you turn the color of the button to salmon
         style.backgroundColor = 'red';
+        // when the button is activated you turn the color of the button to salmon
+        //style.backgroundColor = 'red';
         style[':hover'] = { 
           backgroundColor: 'salmon',
           color: 'white'
         }
       }
-
-    //const classes = ['red', 'bold'].join(' ');  
+    
     const classes = [];
+    //const classes = ['red', 'bold'].join(' ');  
+    
+    //const assignedClasses = []
     if (this.state.people.length <= 2){
       classes.push('red'); // classes = ['red']
     }
@@ -110,12 +114,12 @@ class App extends Component {
     return (
       //We use className to avoid confusion with the keyword class even though the className 
       // gets converted to the class keyword.
-      // className = {classes.join(' ')} because we need to convert the array into a string so it can work
+      //className = {classes.join(' ')} //because we need to convert the array into a string so it can work
       <StyleRoot>
         <div className="App">
           <h1>React App</h1>
           <p className = {classes.join(' ')}>This is working!</p>
-          <button  style={style}
+          <button style={style}
             onClick={this.togglePersonsHandler}>Switch name</button>  
           {persons}
         </div>     

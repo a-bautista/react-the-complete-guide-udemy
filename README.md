@@ -4,13 +4,13 @@
 
 |No| folder name               | Content description |
 |--|:--------------------------|:--------------------|
-|1 | section-3  | This folder contains the basics about setting up your first react app and useful notes to understand the basics of props and state. The things I learened in this chapter were the use of state and how to change it, the props functionality which is used to pass content through components. |
-|1.1 | section-3-Assignment  | This folder contains the first assignment of the course. |
-|2 | section-4  | This folder contains the same app of section-3 but we added new features such as two new event listeners, for instance, when we click on the button show persons then the cards of the people are displayed and every time we click on a person card then that card gets deleted. The things I learned in this chapter were lists and if conditionals.  |
-|2.1 | section-4-Assignment  |  |
-|n | Reference notes         | Useful commands to know in Docker.|
+| section-3  | This folder contains the basics about setting up your first react app and useful notes to understand the basics of props and state. The things I learened in this chapter were the use of state and how to change it, the props functionality which is used to pass content through components. |
+| section-3-Assignment  | This folder contains the first assignment of the course. |
+| section-4  | This folder contains the same app of section-3 but we added new features such as two new event listeners, for instance, when we click on the button show persons then the cards of the people are displayed and every time we click on a person card then that card gets deleted. The things I learned in this chapter were lists and if conditionals.  |
+| section-4-Assignment  |                                   |
+| Reference notes       | Useful commands to know in Docker.|
 
-### 1. section-3
+### section-3
 
 First you need to execute `npm install` to download and install all the required dependencies from the package.json file and then you can run your react app by executing `npm start`. 
 
@@ -64,10 +64,10 @@ When the user clicks on the button the switchNameHandler event listener goes int
         onClick={() => this.switchNameHandler('Alejandro B.')}>Switch name</button>
 
 
-### 1.1. section-3-Assignment
+### section-3-Assignment
 
 
-### 2. section-4
+### section-4
 
 The render process for the app was changed and we display a button which shows or hides the people's cards. 
 
@@ -158,5 +158,5 @@ This is how the structure of the react app works:
     App.js ---> waits for an event ---> click on button ---> togglePersonsHandler ---> display <Person /> 
     
 
-### 2.1 section-4-Assignment
+### section-4-Assignment
 

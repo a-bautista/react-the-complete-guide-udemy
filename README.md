@@ -10,6 +10,15 @@
 | section-5-css-enabled | This folder contains same project from section-5 but the css functionalities were implemented with CSS modules.|
 | Assignments           | See the completed assignments.|
 
+### Intro
+
+What is the difference between package.json and package-json.lock? Package.json contains the dependencies and their current versions that your app needs in order to be built. The package.json.lock file contains the number of version of the dependencies that your dependencies need in order to build your app (nested dependencies). 
+
+In order to install the dependencies from the `package.json` you need to run `npm install` in the folder where your `package.json` file is located. 
+
+In order to install the dependencies from the `package-lock.json` you need to run `npm ci` in the folder where your `package-lock.json` file is located. 
+
+
 ### section-3
 
 First you need to execute `npm install` to download and install all the required dependencies from the package.json file and then you can run your react app by executing `npm start`. 

@@ -5,10 +5,10 @@
 |folder name               | Content description |
 |--------------------------|:--------------------|
 | section-3  | This folder contains the basics about setting up your first react app and useful notes to understand the basics of props and state. The things I learened in this chapter were the use of state and how to change it, the props functionality which is used to pass content through components. |
-| section-3-Assignment  | This folder contains the first assignment of the course. |
-| section-4  | This folder contains the same app of section-3 but we added new features such as two new event listeners, for instance, when we click on the button show persons then the cards of the people are displayed and every time we click on a person card then that card gets deleted. The things I learned in this chapter were lists and if conditionals.  |
-| section-4-Assignment  |                                   |
-| Reference notes       | Useful commands to know in Docker.|
+| section-4  | This folder contains the same app of section-3 but we added new features such as two new event listeners, for instance, when we click on the button show persons then the cards of the people are displayed and every time we click on a person card then that card gets deleted. The things I learned in this chapter were lists and if conditionals.  |                               |
+| section-5             | This folder contains same project from section-4 but we added some css functionalities with Radium.|
+| section-5-css-enabled | This folder contains same project from section-5 but the css functionalities were implemented with CSS modules.|
+| Assignments           | See the completed assignments.|
 
 ### section-3
 
@@ -62,9 +62,6 @@ When the user clicks on the button the switchNameHandler event listener goes int
 
     <button  style={style}
         onClick={() => this.switchNameHandler('Alejandro B.')}>Switch name</button>
-
-
-### section-3-Assignment
 
 
 ### section-4
@@ -158,5 +155,4 @@ This is how the structure of the react app works:
     App.js ---> waits for an event ---> click on button ---> togglePersonsHandler ---> display <Person /> 
     
 
-### section-4-Assignment
 

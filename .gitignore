@@ -1,5 +1,12 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# modules of each chapter
+/Section-3/node_modules
+/Section-4/node_modules
+/Section-5/node_modules
+/Section-5-css-enabled/node_modules
+/Section-6/node_modules
+
 # dependencies
 /node_modules
 /.pnp

@@ -8,7 +8,7 @@
 | section-4  | This folder contains the same app of section-3 but we added new features such as two new event listeners, for instance, when we click on the button show persons then the cards of the people are displayed and every time we click on a person card then that card gets deleted. The things I learned in this chapter were lists and if conditionals.  |                               |
 | section-5             | This folder contains same project from section-4 but we added some css functionalities with Radium.|
 | section-5-css-enabled | This folder contains same project from section-5 but the css functionalities were implemented with CSS modules. Furthermore, we enabled the ErrorBoundary component which is a useful tool to use in production because you have a way to control or catch an error that you believe might appear in another component. |
-| section-6             | This folder contains the same project from section-5-css-enabled with a different file structure..|
+| section-6             | This folder contains the same project from section-5 with a different file structure.|
 | Assignments           | See the completed assignments.|
 
 ### Intro
@@ -17,7 +17,7 @@ What is the difference between package.json and package-json.lock? Package.json 
 
 In order to install the dependencies from the `package.json` you need to run `npm install` in the folder where your `package.json` file is located. 
 
-In order to install the dependencies from the `package-lock.json` you need to run `npm ci` in the folder where your `package-lock.json` file is located. 
+In order to install the nested dependencies exact version numbers from the `package-lock.json` you need to run `npm ci` in the folder where your `package-lock.json` file is located. Notice that you need both the package-lock.json and 
 
 
 ### section-3

@@ -12,6 +12,9 @@
 | Assignments           | See the completed assignments.|
 
 ### Intro
+How do you start a react web app?
+
+You need to first install nodejs in your machine, then that will install the npm package manager and after this simply type in a terminal window the command `npm init react-app <name-of-your-app>`.
 
 What is the difference between package.json and package-json.lock? Package.json contains the dependencies and their current versions that your app needs in order to be built. The package.json.lock file contains the number of version of the dependencies that your dependencies need in order to build your app (nested dependencies). 
 

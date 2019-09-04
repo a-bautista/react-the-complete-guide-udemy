@@ -170,4 +170,4 @@ This is how the structure of the react app works:
 
 ### section-5-CSS-enabled
 
-We had to run the npm run eject to dive into the internals of webpack
+We had to run the `npm run eject` to dive into the internals of webpack (this command can only be executed when you have committed all the changes in git, otherwise it won't let you proceed). 

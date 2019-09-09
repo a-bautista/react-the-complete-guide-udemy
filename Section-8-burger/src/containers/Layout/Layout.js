@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Aux from "../../higher order component (hoc)/Auxiliary";
 import classes from "./Layout.css";
-import Toolbar from "../Navigation/Toolbar";
-import SideDrawer from "../Navigation/SideDrawer/SideDrawer";
+import Toolbar from "../../components/Navigation/Toolbar";
+import SideDrawer from "../../components/Navigation/SideDrawer/SideDrawer";
 
 /*
     This is a functional component and we can return a json object, a div or an array (but you need to return a key).

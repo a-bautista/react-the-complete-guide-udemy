@@ -8,7 +8,8 @@ import BurgerIngredient from "./BurgerIngredient/BurgerIngredient";
 */
 
 /*
-  The function from below convert the ingredients object into an array.
+  The function from below convert the ingredients object into an array. 
+  I need to explain a bit more the function from below.
 */
 const burger = props => {
   const transformedIngredients = Object.keys(props.ingredients).map(
